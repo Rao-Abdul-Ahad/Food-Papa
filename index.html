@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylem.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+    
+   
+</head>
+
+<body  bgcolor="#D70F64">
+    <center>
+        <div class="animate__animated animate__backInDown">
+            <img src="./download-removebg-preview.png" class="animate__animated animate__rotateIn" style="width: 200px;" />
+        </div> 
+        <h1  class="animate__animated animate__backInLeft" >Welcome to Food Papa</h1>
+    <h1 class="animate__animated animate__backInRight" class="hh">First You Have To Make An Account!!!</h1>
+    <div class="main">
+    <button class="animate__animated animate__backInLeft" onclick="btn1()"  id="btn1">Sign Up With Email Or Password</button>
+    <h1 class="animate__animated animate__backInUp">OR</h1>
+        <button class="animate__animated animate__backInRight" onclick="btn2()"  id="googlebtn">Login With Google</button>
+      
+    </div>
+ <h2 style="color: white;"> Already have an account? <a style="color: white;" href="index2.html">Sign In</a> </h2>
+    </center> 
+    <script>
+        const img = document.getElementById('img');
+        img.addEventListener('animationend', () => {
+          img.classList.remove('animate__BackInDown');
+          img.classList.add('animate__RotateIn');
+        });
+      </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="apptec.js" ></script>
+    <script type="module" src="google.js"></script>
+</body>
+ 
+</html>

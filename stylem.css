@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+}
+
+/* Image container */
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D70F64;
+  margin-top: 7%;
+  padding: 20px; /* Added spacing */
+}
+
+/* Headings */
+h1 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  color: azure;
+}
+
+.hh {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: azure;
+}
+
+/* Responsive Headings */
+@media (max-width: 768px) {
+  .h {
+    font-size: 30px;
+  }
+  .img {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .h {
+    font-size: 25px;
+  }
+  .img {
+    margin-top: 15%;
+    padding: 10px;
+  }
+}
+
+/* Main content wrapper */
+.main {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border: 2px solid white;
+  color: white;
+  background-color: #D70F64;
+  font-size: large;
+  border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+}
+
+/* Button hover styling */
+button:hover {
+  color: #D70F64;
+  background-color: white;
+  border: 2px solid #D70F64;
+}
