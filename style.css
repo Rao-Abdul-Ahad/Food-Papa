@@ -1,0 +1,177 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Fix horizontal scroll */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.h {
+    font-size: 40px;
+    font-weight: bold;
+    color: #D70F64;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Image */
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D70F64;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Input */
+.inp {
+    width: 100%;
+    height: 45px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #D70F64;
+    background-color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    width: 50%;
+    height: 55px;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 40px;
+    border: #D70F64 solid 4px;
+    background-color: white;
+    color: #D70F64;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #D70F64;
+    color: white;
+    border: white solid 4px;
+    width: 55%;
+    height: 70px;
+}
+
+/* Centered layout */
+.child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Main container */
+.main {
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+/* Text styles */
+.p {
+    font-size: larger;
+    color: #D70F64;
+    text-align: center;
+}
+
+.s {
+    font-size: x-large;
+}
+
+.w {
+    color: #D70F64;
+}
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .h {
+        font-size: 35px;
+    }
+
+    .img {
+        max-width: 120px;
+    }
+
+    .btn {
+        width: 70%;
+        font-size: large;
+        height: 50px;
+    }
+
+    .inp {
+        font-size: large;
+    }
+
+    .main {
+        width: 90%;
+        height: auto;
+    }
+
+    .p {
+        font-size: medium;
+    }
+
+    .s {
+        font-size: large;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .h {
+        font-size: 28px;
+    }
+
+    .img {
+        max-width: 100px;
+    }
+
+    .btn {
+        width: 90%;
+        font-size: medium;
+        height: 45px;
+    }
+
+    .inp {
+        font-size: medium;
+    }
+
+    .main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .p {
+        font-size: small;
+    }
+
+    .s {
+        font-size: medium;
+    }
+}
