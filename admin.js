@@ -165,7 +165,12 @@ await updateDoc(cityRef, {
 window.edit = edit;
 
 async  function  log() {
-  Swal.fire({
+
+  const auth = getAuth();
+  signOut(auth)
+  .then(() => {
+    // Sign-out successful.
+      Swal.fire({
     title: "Are you sure?",
     text: "You won't be able to revert this!",
     icon: "warning",
@@ -186,11 +191,6 @@ async  function  log() {
      
     }
   });
-  const auth = getAuth();
-  signOut(auth)
-  .then(() => {
-    // Sign-out successful.
-    alert("Logged Out");
     window.location.href = "index.html";
   }) .catch((error) => {
     // An error happened.
