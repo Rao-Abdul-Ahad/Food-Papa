@@ -31,3 +31,14 @@ getbtn.addEventListener("click", () => {
             
         });
 })
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    console.log(uid);
+    location.href = "adminpanel.html";
+    
+  } else {
+    console.log('User is signed out');
+    
+  }
+});
